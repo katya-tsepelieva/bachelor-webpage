@@ -3,20 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бакалаврська робота</title>
-    <link rel="stylesheet" href="styles/style.css">
     <meta name="description" content="Створення лендінгу для бакалаврської роботи">
     <meta name="keywords" content="бакалаврська робота, лендінг, університет">
+
+    <title>Бакалаврська робота</title>
+
+    <!-- Open Graph (OG) -->
+    <meta property="og:title" content="Онлайн-магазин товарів для тварин">
+    <meta property="og:description" content="Розроблена інформаційна система дає можливість користувачам здійснювати покупки зоотоварів.">
+    <meta property="og:image" content="https://www.mysite.com/logo.jpg">
+    <meta property="og:url" content="https://www.mysite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Інформаційна система онлайн-магазину",
+            "description": "Дає можливість користувачам здійснювати покупки зоотоварів."
+        }
+    </script>
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
-    <h1>Веборієнтована інформаційна система онлайн-магазину товарів для тварин</h1>
-    <p>PetStore - це веб-застосунок для онлайн-магазину товарів для тварин, що дозволяє
-        користувачам переглядати та купувати продукти для своїх улюбленців.
-        Система включає інтерфейс для адміністратора, де можна керувати товарами,
-        замовленнями, користувачами та іншими аспектами магазину.</p>
+    <header role="banner">
+        <h1 id="main-title">Веборієнтована інформаційна система онлайн-магазину товарів для тварин</h1>
+    </header>
+
+    <main role="main" aria-labelledby="main-title">
+        <section id="description" aria-labelledby="description-heading">
+            <h2 id="description-heading">Опис проекту</h2>
+            <p>PetStore - це веб-застосунок для онлайн-магазину товарів для тварин, що дозволяє
+                користувачам переглядати та купувати продукти для своїх улюбленців.
+                Система включає інтерфейс для адміністратора, де можна керувати товарами,
+                замовленнями, користувачами та іншими аспектами магазину.</p>
+        </section>
+
+        <section id="goal" aria-labelledby="goal-heading">
+            <h3 id="goal-heading">Мета проекту</h3>
+            <p>Основною метою є створення зручної онлайн-платформи, що
+                включає різноманітні товари для тварин,
+                функціонал для зручного оформлення замовлень.</p>
+        </section>
+
+        <section id="development-process" aria-labelledby="development-process-heading">
+            <h3 id="development-process-heading">Процес розробки</h3>
+            <p>Процес розробки проекту включав планування, розробку інтерфейсу користувача і
+                налаштування бази даних.</p>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <h4 id="contact-heading">Контакти</h4>
+        <p>Для додаткової інформації, будь ласка, звертайтесь на <a href="mailto:info@petsstore.com" aria-label="Написати на електронну пошту">info@petsstore.com</a>.</p>
+    </footer>
 </body>
 </html>
