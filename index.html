@@ -30,39 +30,186 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header role="banner">
-        <h1 id="main-title">Веборієнтована інформаційна система онлайн-магазину товарів для тварин</h1>
-    </header>
 
-    <main role="main" aria-labelledby="main-title">
-        <section id="description" aria-labelledby="description-heading">
-            <h2 id="description-heading">Опис проекту</h2>
-            <p>PetStore - це веб-застосунок для онлайн-магазину товарів для тварин, що дозволяє
-                користувачам переглядати та купувати продукти для своїх улюбленців.
-                Система включає інтерфейс для адміністратора, де можна керувати товарами,
-                замовленнями, користувачами та іншими аспектами магазину.</p>
-        </section>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" aria-label="Основне меню">
+    <div class="container">
+        <a class="navbar-brand" href="#" aria-label="Перейти на головну сторінку">МОЯ БАКАЛАВРСЬКА РОБОТА</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Перемкнути навігацію">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#relevance" aria-label="Перейти до секції актуальності">Актуальність</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#methodology" aria-label="Перейти до секції методології">Методологія</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#results" aria-label="Перейти до секції результатів">Результати</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" aria-label="Перейти до секції контактів">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <section id="goal" aria-labelledby="goal-heading">
-            <h3 id="goal-heading">Мета проекту</h3>
-            <p>Основною метою є створення зручної онлайн-платформи, що
-                включає різноманітні товари для тварин,
-                функціонал для зручного оформлення замовлень.</p>
-        </section>
+<!-- Hero Section -->
+<header class="hero-section text-black py-5" aria-label="Героїчний блок з описом проекту">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0 text-center">
+                <img src="assets/favicon/chromeAndroid-192x192.png" alt="Зображення для PetStore" class="img-fluid rounded">
+            </div>
 
-        <section id="development-process" aria-labelledby="development-process-heading">
-            <h3 id="development-process-heading">Процес розробки</h3>
-            <p>Процес розробки проекту включав планування, розробку інтерфейсу користувача і
-                налаштування бази даних.</p>
-        </section>
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-5 fw-bold mb-4" id="hero-title">Веборієнтована інформаційна система онлайн-магазину товарів для тварин</h1>
+                <p class="lead mb-4">PetStore — це веб-застосунок для онлайн-магазину товарів для тварин, що дозволяє
+                    користувачам переглядати та купувати продукти для своїх домашніх улюбленців.</p>
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3">
+                    <a href="#relevance" class="btn btn-dark btn-lg px-4" role="button" aria-label="Дізнатися більше про проект">Дізнатися більше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-    </main>
+<!-- Relevance Section -->
+<section id="relevance" class="py-5" aria-labelledby="relevance-title">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title" id="relevance-title">Актуальність теми</h2>
+                <div class="content-block">
+                    <p class="lead">В умовах стрімкого розвитку електронної комерції, створення ефективної веб-орієнтованої системи є надзвичайно актуальним.</p>
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Зростання ринку товарів для тварин</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Потреба в автоматизації процесів</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Підвищення якості обслуговування клієнтів</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/images/e-commerce.jpg"
+                     class="img-fluid rounded shadow-lg"
+                     alt="Актуальність проекту" aria-label="Зображення актуальності проекту">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <footer role="contentinfo">
-        <h4 id="contact-heading">Контакти</h4>
-        <p>Для додаткової інформації, будь ласка, звертайтесь на <a href="mailto:info@petsstore.com" aria-label="Написати на електронну пошту">info@petsstore.com</a>.</p>
-    </footer>
+<!-- Goals Section -->
+<section id="goals" class="py-5 bg-light" aria-labelledby="goals-title">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" id="goals-title">Мета та завдання</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="goal-card">
+                    <h3 class="h4 mb-3"><i class="bi bi-target"></i> Мета проекту</h3>
+                    <p>Розробка сучасної веборієнтованої інформаційної системи для автоматизації процесів онлайн-продажу зоотоварів.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="goal-card">
+                    <h3 class="h4 mb-3"><i class="bi bi-list-task"></i> Основні завдання</h3>
+                    <ul class="task-list">
+                        <li>Аналіз існуючих рішень та технологій</li>
+                        <li>Проектування архітектури системи</li>
+                        <li>Розробка користувацького інтерфейсу</li>
+                        <li>Тестування та впровадження функціоналу</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Methodology Section -->
+<section id="methodology" class="py-5" aria-labelledby="methodology-title">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" id="methodology-title">Методологія дослідження</h2>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="methodology-card">
+                    <i class="bi bi-search"></i>
+                    <h3>Аналіз вимог</h3>
+                    <p>Збір та аналіз вимог до системи, вивчення потреб користувачів та бізнес-процесів. Дослідження аналогів.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="methodology-card">
+                    <i class="bi bi-diagram-3"></i>
+                    <h3>Проектування</h3>
+                    <p>Розробка архітектури системи, проектування бази даних та користувацьких інтерфейсів.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="methodology-card">
+                    <i class="bi bi-code-square"></i>
+                    <h3>Реалізація</h3>
+                    <p>Розробка, тестування та впровадження функціоналу.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section id="results" class="py-5 bg-light" aria-labelledby="results-title">
+    <div class="container">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title" id="result-title">Очікувані результати</h2>
+                <div class="content-block">
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Простий і зручний інтерфейс.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Адаптивний дизайн.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Можливість для користувача переглядати каталог товарів, додавати товари в кошик, оформлювати замовлення, додавати товари в обране, залишати відгуки, пеерглядати відгуки.</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Можливість для адміністратора керувати товарами, замовленнями, користувачами.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/images/screen.jpg"
+                     class="img-fluid rounded shadow-lg"
+                     alt="Результат" aria-label="Зображення головної сторінки проекту">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" aria-labelledby="contact-title">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" id="contact-title">Контакти</h2>
+        <div class="text-center">
+            <p>Email: <a href="mailto:info@petstore.com">katyatsepelieva@gmail.com</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4">
+    <p>&copy; 2025 Моя бакалаврська робота.</p>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
